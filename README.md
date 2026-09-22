@@ -1,2 +1,3 @@
-# colab_adk_book
-Google Colaboratory Notebooks for ADK Development Book
+# 実践！Google CloudとADKによるAIエージェント開発入門：サンプルコード集
+
+**注意**：大規模言語モデルの出力は確率的に変化するため、ノートブックに記載のコードの実行結果（AIエージェントの応答メッセージ）は実行ごとに変化します。
