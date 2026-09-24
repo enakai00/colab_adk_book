@@ -5,7 +5,7 @@
 - 大規模言語モデルの出力は確率的に変化するため、ノートブックに記載のコードの実行結果（AI エージェントの応答メッセージ）は実行ごとに変化します。
 - GitHub のページでノートブックファイルを開くと、コードの内容が崩れて表示されることがあります。コードをコピペする際は、ダウンロードしたノートブックファイルを Colaboratory で開いて行うようにしてください。
 
-## 事前準備のコマンド
+## 事前準備で Cloud Shell から実行するコマンド
 
 ### API の有効化
 ```
@@ -34,4 +34,19 @@ gcloud projects add-iam-policy-binding $PROJECT_ID \
 gcloud projects add-iam-policy-binding $PROJECT_ID \
     --member="serviceAccount:service-${PROJECT_NUMBER}@gcp-sa-aiplatform-re.iam.gserviceaccount.com" \
     --role='roles/storage.objectUser'
+```
+
+## サンプルコードをダウンロードする際にノートブック上で実行するコマンド
+
+### Google Drive のマウント
+```
+from google.colab import drive
+drive.mount('/content/gdrive')
+```
+
+### GitHub リポジトリのクローン
+```
+%%bash
+cd '/content/gdrive/My Drive/Colab Notebooks'
+git clone https://github.com/enakai00/colab_adk_book.git
 ```
