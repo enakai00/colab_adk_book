@@ -15,6 +15,9 @@ gcloud services enable \
     cloudkms.googleapis.com  \
     iamcredentials.googleapis.com \
     cloudresourcemanager.googleapis.com \
+    monitoring.googleapis.com \
+    cloudtrace.googleapis.com \
+    telemetry.googleapis.com \
     apphub.googleapis.com
 ```
 
