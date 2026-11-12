@@ -12,6 +12,7 @@
 gcloud services enable \
     aiplatform.googleapis.com \
     mapstools.googleapis.com \
+    bigquery.googleapis.com \
     cloudkms.googleapis.com  \
     iamcredentials.googleapis.com \
     cloudresourcemanager.googleapis.com \
