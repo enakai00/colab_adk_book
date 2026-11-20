@@ -15,10 +15,10 @@ gcloud services enable \
     bigquery.googleapis.com \
     cloudkms.googleapis.com  \
     iamcredentials.googleapis.com \
-    cloudresourcemanager.googleapis.com \
     monitoring.googleapis.com \
     cloudtrace.googleapis.com \
     telemetry.googleapis.com \
+    cloudresourcemanager.googleapis.com \
     apphub.googleapis.com
 ```
 
